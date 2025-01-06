@@ -15,7 +15,7 @@ class Bonus extends Model
         'percent'
     ];
 
-    public function restaurant() {
-        return $this->hasMany(Restaurant::class);
+    public function transaction() {
+        return $this->belongsTo(Transaction::class);
     }
 }

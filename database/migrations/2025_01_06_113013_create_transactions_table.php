@@ -19,6 +19,7 @@ return new class extends Migration
             $table->foreignId('reservation_id')->constrained()->cascadeOnDelete();
             $table->enum('payment_method', ['down_payment', 'full_payment'])->nullable();
             $table->string('payment_status')->nullable();
+            $table->foreignId('bonus_id')->constrained()->cascadeOnDelete();
             $table->integer('total_amount')->nullable();
             $table->date('transaction_date')->nullable();
             $table->softDeletes();

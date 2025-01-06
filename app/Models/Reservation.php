@@ -10,24 +10,26 @@ class Reservation extends Model
 {
     use HasFactory, SoftDeletes;
     protected $fillable = [
-        'name',
         'user_id',
-        'menu_id',
-        'restaurant_table_id',
         'restaurant_id',
+        'restaurant_table_id',
         'start_date'
     ];
 
     public function user() {
         return $this->belongsTo(User::class);
     }
-    public function menu() {
+    public function menus() {
         return $this->hasMany(Menu::class);
     }
-    public function restaurantTable() {
-        return $this->hasMany(RestaurantTable::class);
+
+    public function order() {
+        return $this->hasMany(Order::class);
+    }
+    public function restaurant_table() {
+        return $this->belongsTo(RestaurantTable::class);
     }
     public function restaurant() {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(Restaurant::class);
     }
 }

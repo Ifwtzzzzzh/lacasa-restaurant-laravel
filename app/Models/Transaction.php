@@ -16,6 +16,7 @@ class Transaction extends Model
         'reservation_id',
         'payment_method',
         'payment_status',
+        'bonus_id',
         'total_amount',
         'transaction_date'
     ];
@@ -24,5 +25,8 @@ class Transaction extends Model
     }
     public function reservation() {
         return $this->belongsTo(Reservation::class);
+    }
+    public function bonus() {
+        return $this->belongsTo(Bonus::class);
     }
 }

@@ -25,7 +25,7 @@ class BonusResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required(),
-                Forms\Components\Textarea::make('description')
+                Forms\Components\TextInput::make('description')
                     ->required(),
                 Forms\Components\TextInput::make('percent')
                     ->required(),

@@ -15,12 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('image');
             $table->string('name');
+            $table->string('slug');
             $table->foreignId('city_id')->constrained()->cascadeOnDelete();
             $table->string('address');
             $table->boolean('rating');
             $table->text('description');
-            $table->foreignId('menu_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('bonus_id')->nullable()->cascadeOnDelete();
             $table->softDeletes();
             $table->timestamps();
         });
