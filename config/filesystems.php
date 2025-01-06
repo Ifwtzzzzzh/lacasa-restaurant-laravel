@@ -45,6 +45,12 @@ return [
             'throw' => false,
         ],
 
+        'city' => [
+            'driver' => 'local',
+            'root' => public_path('uploads/city'),
+            'url' => env('APP_URL').'/uploads/city',
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
