@@ -7,6 +7,6 @@
     <title>User Page</title>
 </head>
 <body>
-
+    <h1>UserPage</h1>
 </body>
 </html>

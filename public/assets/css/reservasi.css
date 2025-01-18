@@ -1,0 +1,197 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Reservation Section */
+  .reservation {
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .reservation-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-left, .form-right {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .form-left {
+    background-color: #fff;
+  }
+  
+  .bg-black-10 {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .headline-1 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .form-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .link {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Tambahkan ruang untuk ikon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea.input-field {
+    resize: none;
+    height: 100px;
+  }  
+  .input-name {
+    width: 100%;
+    padding: 10px; /* Tambahkan ruang untuk ikon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea.input-field {
+    resize: none;
+    height: 100px;
+  } 
+  .icon-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-wrapper ion-icon {
+    position: absolute;
+    left: 10px;
+    color: #666;
+  }
+  
+  select.input-field, input[type="date"] {
+    padding-left: 40px;
+    appearance: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-secondary {
+    background-color: #007BFF;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #0056b3;
+  }
+  
+  .text {
+    display: inline-block;
+  }
+  
+  /* Contact Information */
+  .form-right {
+    color: #fff;
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .contact-label {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #f0f0f0;
+  }
+  
+  .contact-number {
+    color: #007BFF;
+  }
+  
+  .contact-number:hover {
+    text-decoration: underline;
+  }
+  
+  .address {
+    color: #f0f0f0;
+    font-size: 16px;
+  }
+  
+  .separator {
+    height: 1px;
+    background-color: #555;
+    margin: 20px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .reservation-form {
+      flex-direction: column;
+    }
+  
+    .form-left, .form-right {
+      flex: 1 1 100%;
+    }
+  
+    .form-right {
+      background-image: none;
+      padding: 20px;
+      color: #333;
+      background-color: #f3f3f3;
+    }
+  
+    .headline-1 {
+      font-size: 20px;
+    }
+  
+    .input-wrapper {
+      flex-direction: column;
+    }
+  }
+  
