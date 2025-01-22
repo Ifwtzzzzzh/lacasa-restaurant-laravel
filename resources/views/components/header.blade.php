@@ -16,7 +16,7 @@
 
         <a href="#" class="logo">
           <img
-            src="./gambar/logo.svg"
+            src="{{ asset("assets/images/Logo LaCasa2.png") }}"
             width="160"
             height="50"
             alt="Grilli - Home"
@@ -65,6 +65,32 @@
               <span class="span">Contact</span>
             </a>
           </li>
+
+          @if (Route::has('login'))
+            @auth
+                <li class="navbar-item" style="margin-top: 25rem">
+                    <a href="{{ url('/admin') }}" class="navbar-link hover-underline">
+                        <div class="separator"></div>
+                        <span class="span">Dashboard</span>
+                    </a>
+                </li>
+            @else
+                <li class="navbar-item" style="margin-top: 25rem">
+                    <a href="{{ url('/login') }}" class="navbar-link hover-underline">
+                        <div class="separator"></div>
+                        <span class="span">Login</span>
+                    </a>
+                </li>
+                @if (Route::has('register'))
+                    <li class="navbar-item">
+                        <a href="{{ url('/register') }}" class="navbar-link hover-underline">
+                        <div class="separator"></div>
+                        <span class="span">Register</span>
+                        </a>
+                    </li>
+                @endif
+            @endauth
+        @endif
         </ul>
       </nav>
       @if (Route::has('login'))

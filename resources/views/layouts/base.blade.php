@@ -39,6 +39,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
 
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- preload images -->
     <link rel="preload" as="image" href="{{ asset('assets/images/hero-slider-1.jpg') }}" />
     <link rel="preload" as="image" href="{{ asset('assets/images/hero-slider-2.jpg') }}" />
@@ -71,9 +73,7 @@
                 />
               </div>
 
-              <p class="label-2 section-subtitle slider-reveal">
-                Restaurant & Cafe
-              </p>
+              <p class="label-2 section-subtitle slider-reveal">Restaurant & Cafe</p>
 
               <h1 class="display-1 hero-title slider-reveal">
                 For the love of <br />
@@ -171,11 +171,7 @@
               </h2>
 
               <p class="section-text">
-                Lorem Ipsum is simply dummy text of the printingand typesetting
-                industry lorem Ipsum has been the industrys standard dummy text
-                ever since the when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book It has survived not
-                only five centuries, but also the leap into.
+                Ucapkan selamat tinggal pada antrian panjang! Dengan website reservasi restoran, kamu bisa menghindari kekecewaan karena kehabisan tempat duduk. Pesan meja kapan saja dan di mana saja, lalu nikmati hidangan lezat tanpa perlu repot.
               </p>
 
               <div class="contact-label">Book Through Call</div>
@@ -275,9 +271,6 @@
                       <p class="location">📍 BSD</p>
                     </div>
                     <div class="action-buttons">
-                      <a href="detailphoto.html" class="btn-text view-photos"
-                        >Detail Resto</a
-                      >
                     </div>
                   </div>
                   <a href="reservasi.html" class="btn-text book-table"
@@ -305,9 +298,6 @@
                       <p class="location">📍 Jakarta Timur</p>
                     </div>
                     <div class="action-buttons">
-                      <a href="detailphoto.html" class="btn-text view-photos"
-                        >Detail Resto</a
-                      >
                     </div>
                   </div>
                   <a href="reservasi.html" class="btn-text book-table"
@@ -335,9 +325,6 @@
                       <p class="location">📍 BSD</p>
                     </div>
                     <div class="action-buttons">
-                      <a href="viewphoto.html" class="btn-text view-photos"
-                        >Detail Resto</a
-                      >
                     </div>
                   </div>
                   <a href="reservasi.html" class="btn-text book-table"
@@ -399,7 +386,7 @@
                   <h3 class="title-2 card-title">Makanan Sehat</h3>
 
                   <p class="label-1 card-text">
-                    Lorem Ipsum is simply dummy printing and typesetting.
+                    Nikmati hidangan sehat dan lezat di restoran nyaman kami, hasil kreasi chef profesional. Dapatkan diskon menarik dan ikuti event seru kami!
                   </p>
                 </div>
               </li>
@@ -419,7 +406,7 @@
                   <h3 class="title-2 card-title">Restaurant Nyaman</h3>
 
                   <p class="label-1 card-text">
-                    Lorem Ipsum is simply dummy printing and typesetting.
+                    Rasakan pengalaman kuliner yang tak terlupakan dengan menu sehat, suasana restoran yang menenangkan, sentuhan kreatif chef profesional, serta penawaran menarik yang selalu ada.
                   </p>
                 </div>
               </li>
@@ -439,7 +426,7 @@
                   <h3 class="title-2 card-title">Chef Profesional</h3>
 
                   <p class="label-1 card-text">
-                    Lorem Ipsum is simply dummy printing and typesetting.
+                    Manjakan diri dengan hidangan sehat yang dibuat oleh chef berpengalaman di restoran yang nyaman. Dapatkan lebih banyak dengan diskon dan event eksklusif kami!
                   </p>
                 </div>
               </li>
@@ -459,7 +446,7 @@
                   <h3 class="title-2 card-title">Diskon & Event</h3>
 
                   <p class="label-1 card-text">
-                    Lorem Ipsum is simply dummy printing and typesetting.
+                    Kombinasi sempurna antara hidangan sehat, suasana nyaman, keahlian chef, dan penawaran menarik hanya ada di sini. Kunjungi kami dan rasakan perbedaannya!
                   </p>
                 </div>
               </li>
@@ -851,7 +838,6 @@
                 width="160"
                 height="50"
                 loading="lazy"
-                alt="grilli home"
               />
             </a>
 
