@@ -11,7 +11,7 @@ class UserController extends Controller
     }
 
     public function home() {
-        return view('layouts.base');
+        return view('public.welcome');
     }
 
     public function index() {

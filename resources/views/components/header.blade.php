@@ -23,6 +23,18 @@
           />
         </a>
 
+        <a href="{{ url('/login') }}" class="btn" style="margin-bottom: 10px">
+            <span class="text text-1">Loginnn</span>
+            <span class="text text-2" aria-hidden="true">Login </span>
+        </a>
+        @if (Route::has('register'))
+            <a href="{{ url('/register') }}" class="btn btn-secondary">
+                <span class="text text-1">Register</span>
+
+                <span class="text text-2" aria-hidden="true">Register</span>
+            </a>
+        @endif
+
         <ul class="navbar-list">
           <li class="navbar-item">
             <a href="#home" class="navbar-link hover-underline active">
@@ -58,56 +70,29 @@
               <span class="span">Article</span>
             </a>
           </li>
-
           <li class="navbar-item">
             <a href="#contact" class="navbar-link hover-underline">
               <div class="separator"></div>
               <span class="span">Contact</span>
             </a>
           </li>
-
-          @if (Route::has('login'))
-            @auth
-                <li class="navbar-item" style="margin-top: 25rem">
-                    <a href="{{ url('/admin') }}" class="navbar-link hover-underline">
-                        <div class="separator"></div>
-                        <span class="span">Dashboard</span>
-                    </a>
-                </li>
-            @else
-                <li class="navbar-item" style="margin-top: 25rem">
-                    <a href="{{ url('/login') }}" class="navbar-link hover-underline">
-                        <div class="separator"></div>
-                        <span class="span">Login</span>
-                    </a>
-                </li>
-                @if (Route::has('register'))
-                    <li class="navbar-item">
-                        <a href="{{ url('/register') }}" class="navbar-link hover-underline">
-                        <div class="separator"></div>
-                        <span class="span">Register</span>
-                        </a>
-                    </li>
-                @endif
-            @endauth
-        @endif
         </ul>
       </nav>
       @if (Route::has('login'))
         @auth
-            <a href="{{ url('/dashboard') }}" class="btn btn-secondary mr-8">
+            <a href="{{ url('/dashboard') }}" class="btn header-btn btn-secondary mr-8" >
                 <span class="text text-1">Dashboard</span>
 
                 <span class="text text-2" aria-hidden="true">Login </span>
             </a>
         @else
-            <a href="{{ url('/login') }}" class="btn btn-secondary mr-8">
+            <a href="{{ url('/login') }}" class="btn header-btn mr-8" data-nav-toggler>
                 <span class="text text-1">login</span>
 
                 <span class="text text-2" aria-hidden="true">Login </span>
             </a>
             @if (Route::has('register'))
-                <a href="{{ url('/register') }}" class="btn btn-secondary">
+                <a href="{{ url('/register') }}" class="btn header-btn btn-secondary">
                     <span class="text text-1">Register</span>
 
                     <span class="text text-2" aria-hidden="true">Register</span>

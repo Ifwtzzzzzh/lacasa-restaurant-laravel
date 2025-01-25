@@ -419,7 +419,7 @@ body.nav-active {
     color: var(--black);
 }
 
-.btn-secondary::before {
+.btn-secondary::before::before {
     background-color: var(--smoky-black-1);
 }
 
@@ -662,7 +662,7 @@ body.nav-active {
   #HEADER
 \*-----------------------------------*/
 
-.header .btn {
+.header .header-btn {
     display: none;
 }
 
@@ -744,6 +744,10 @@ body.nav-active {
     transition: var(--transition-2);
 }
 
+.navbar-button {
+    display: flex; margin-top: 50%; gap: 20px; width: 100%;
+}
+
 .navbar.active {
     visibility: visible;
     transform: translateX(360px);
@@ -754,6 +758,11 @@ body.nav-active {
     border: 1px solid currentColor;
     padding: 4px;
     border-radius: var(--radius-circle);
+    margin-inline-start: auto;
+    margin-block: 30px 20px;
+}
+
+.navbar .sidebar-btn {
     margin-inline-start: auto;
     margin-block: 30px 20px;
 }
@@ -773,6 +782,7 @@ body.nav-active {
 }
 
 .navbar-list {
+    margin-top: 50px;
     border-block-end: 1px solid var(--white-alpha-20);
     margin-block-end: 100px;
 }
