@@ -1,4 +1,9 @@
 @extends('layouts.base')
+
+@section('css')
+    <link rel="stylesheet" href="{{ asset('./assets/css/style.css') }}" />
+@endsection
+
 @section('content')
 <main>
     <article>

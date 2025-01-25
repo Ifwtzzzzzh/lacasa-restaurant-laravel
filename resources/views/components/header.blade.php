@@ -1,6 +1,6 @@
 <header class="header" data-header>
     <div class="container">
-      <a href="#" class="logo">
+      <a href="{{ route('home') }}" class="logo">
         <img
           src="{{ asset('assets/images/Logo LaCasa2.png') }}"
           width="160"
@@ -37,16 +37,16 @@
 
         <ul class="navbar-list">
           <li class="navbar-item">
-            <a href="#home" class="navbar-link hover-underline active">
+            <a href="{{ route('home') }}" class="navbar-link hover-underline">
               <div class="separator"></div>
               <span class="span">Home</span>
             </a>
           </li>
 
           <li class="navbar-item">
-            <a href="#about" class="navbar-link hover-underline">
+            <a href="{{ route('menu') }}" class="navbar-link hover-underline">
               <div class="separator"></div>
-              <span class="span">About Us</span>
+              <span class="span">Menu</span>
             </a>
           </li>
 

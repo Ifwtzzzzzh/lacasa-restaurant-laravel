@@ -22,7 +22,7 @@
     />
 
     <!-- custom css link -->
-    <link rel="stylesheet" href="{{ asset('./assets/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('./assets/css/menu.css') }}">
 
     <!-- link jquery -->
     <link

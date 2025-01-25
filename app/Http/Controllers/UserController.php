@@ -17,4 +17,8 @@ class UserController extends Controller
     public function index() {
         return view('layouts.base');
     }
+
+    public function menu() {
+        return view('public.menu');
+    }
 }
