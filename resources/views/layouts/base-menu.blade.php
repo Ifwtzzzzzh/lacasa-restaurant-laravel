@@ -11,7 +11,8 @@
     <meta name="description" content="Cafe Pemrograman Web" />
 
     <!-- favicons -->
-    <link rel="icon" href="{{ asset('assets/images/favicon.svg') }}" type="image/x-icon" />
+    <link rel="icon" sizes="76x76" href="{{ asset('assets/images/favicon.png') }}" />
+    <link rel="icon" sizes="76x76" href="{{ asset('assets/images/favicon.svg') }}" />
 
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,11 +54,17 @@
       <p class="text">Restaurant</p>
     </div>
 
-    <!-- HEADER -->
     @include('components.header')
 
-    {{-- CONTENT --}}
-    @yield('content')
+    <main>
+        <article>
+            {{-- CONTENT --}}
+            @yield('content')
+        </article>
+    </main>
+
+    <!-- HEADER -->
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>

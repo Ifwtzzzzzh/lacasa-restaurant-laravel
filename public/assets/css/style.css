@@ -453,6 +453,7 @@ body.nav-active {
 }
 
 .grid-list {
+    margin-top: 5rem;
     display: grid;
     gap: 40px;
 }
@@ -1889,6 +1890,7 @@ body.nav-active {
      */
 
     .Restaurant .container {
+        margin-top: 15rem;
         max-width: 420px;
         margin-inline: auto;
     }

@@ -18,7 +18,11 @@ class UserController extends Controller
         return view('layouts.base');
     }
 
-    public function menu() {
-        return view('public.menu');
+    public function reservation() {
+        return view('public.reservation');
+    }
+
+    public function restaurant() {
+        return view('public.restaurant');
     }
 }

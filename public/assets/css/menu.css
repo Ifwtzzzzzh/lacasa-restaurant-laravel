@@ -382,6 +382,11 @@ body.nav-active {
     z-index: 1;
 }
 
+.btn-menu .btn-submit {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .btn::before {
     content: "";
     position: absolute;
@@ -1187,6 +1192,15 @@ footer {
     margin-top: 50rem;
 }
 
+.icon-menu {
+    margin-top: 2rem;
+}
+
+.btn-menu .btn-submit {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .menu .section-title {
     margin-block-end: 40px;
 }
@@ -1246,6 +1260,19 @@ footer {
 .menu-card .card-text {
     color: var(--quick-silver);
     line-height: var(--lineHeight-4);
+}
+
+.text-summary {
+    margin-top: 2rem;
+}
+
+.text-total {
+    margin-bottom: 10rem;
+}
+
+.text-menu {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 .menu-text .span {
@@ -1318,6 +1345,10 @@ footer {
 
 .reservation-form {
     margin-block-start: -270px;
+}
+
+.reservation {
+    margin-top: 20rem;
 }
 
 .form-text {

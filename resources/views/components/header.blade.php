@@ -44,13 +44,6 @@
           </li>
 
           <li class="navbar-item">
-            <a href="{{ route('menu') }}" class="navbar-link hover-underline">
-              <div class="separator"></div>
-              <span class="span">Menu</span>
-            </a>
-          </li>
-
-          <li class="navbar-item">
             <a href="#restaurant" class="navbar-link hover-underline">
               <div class="separator"></div>
               <span class="span">Restaurant</span>
@@ -80,14 +73,14 @@
       </nav>
       @if (Route::has('login'))
         @auth
-            <a href="{{ url('/dashboard') }}" class="btn header-btn btn-secondary mr-8" >
+            <a href="{{ url('/admin') }}" class="btn header-btn btn-secondary mr-8" >
                 <span class="text text-1">Dashboard</span>
 
-                <span class="text text-2" aria-hidden="true">Login </span>
+                <span class="text text-2" aria-hidden="true">Dashboard </span>
             </a>
         @else
             <a href="{{ url('/login') }}" class="btn header-btn mr-8" data-nav-toggler>
-                <span class="text text-1">login</span>
+                <span class="text text-1">Login</span>
 
                 <span class="text text-2" aria-hidden="true">Login </span>
             </a>

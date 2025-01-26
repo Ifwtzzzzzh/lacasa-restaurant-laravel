@@ -11,7 +11,8 @@
     <meta name="description" content="Cafe Pemrograman Web" />
 
     <!-- favicons -->
-    <link rel="icon" href="{{ asset('assets/images/favicon.svg') }}" type="image/x-icon" />
+    <link rel="icon" sizes="76x76" href="{{ asset('assets/images/favicon.png') }}" />
+    <link rel="icon" sizes="76x76" href="{{ asset('assets/images/favicon.svg') }}" />
 
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
