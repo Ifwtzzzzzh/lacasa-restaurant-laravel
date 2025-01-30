@@ -1,9 +1,4 @@
 @extends('layouts.base')
-
-@section('css')
-    <link rel="stylesheet" href="{{ asset('./assets/css/style.css') }}" />
-@endsection
-
 @section('content')
 <main>
     <article>
@@ -190,15 +185,13 @@
         aria-labelledby="restaurant-label"
         id="restaurant"
       >
-      <!-- #Restaurant -->
-
-        <div class="container">
-          <h2 class="section-title">Restaurant</h2>
-          <p class="section-text">
-            Menyediakan Reservasi Restaurant Yang Berkualitas
-          </p>
-
-          <ul class="grid-list">
+    <!-- #Restaurant -->
+      <p class="section-subtitle label-2">Restaurant</p>
+      <h2 class="headline-1 section-title restaurant-title">
+         Reservasi yang Berkualitas
+      </h2>
+      <div class="container">
+          <ul class="grid-list grid-list-restaurant">
             <li>
               <div class="Restaurant-card">
                 <div class="has-before">
@@ -279,14 +272,7 @@
                 >
               </div>
             </li>
-          </ul>
-          <a href="#" class="btn btn-primary">
-            <span class="text text-1">View All Restaurant & Cafe</span>
-
-            <span class="text text-2" aria-hidden="true"
-              >View All Restaurant & Cafe</span
-            >
-          </a>
+        </ul>
           <img
             src="{{ asset('assets/images/shape-1.png') }}"
             width="246"
@@ -315,7 +301,7 @@
         <div class="container">
           <p class="section-subtitle label-2">Kenapa Harus Disini</p>
 
-          <h2 class="headline-1 section-title">Benefit Yang Di dapat</h2>
+          <h2 class="headline-1 section-title">Benefit yang Didapat</h2>
 
           <ul class="grid-list">
             <li class="feature-item">
@@ -353,8 +339,7 @@
                 <h3 class="title-2 card-title">Restaurant Nyaman</h3>
 
                 <p class="label-1 card-text">
-                  Rasakan pengalaman kuliner yang tak terlupakan dengan menu sehat, suasana restoran yang menenangkan, sentuhan kreatif chef profesional, serta penawaran menarik yang selalu ada.
-                </p>
+                  Rasakan pengalaman kuliner yang tak terlupakan dengan menu sehat, suasana restoran yang menenangkan, dan sentuhan kreatif chef profesional.
               </div>
             </li>
 
@@ -424,9 +409,12 @@
         <div class="testimonials-section">
           <header class="section-header">
             <h1>Apa Kata Mereka</h1>
+            <a href="#" class="btn btn-secondary section-header">
+                <span class="text text-1">Create Testimonial</span>
+                <span class="text text-2" aria-hidden="true">Create Testimonial</span>
+            </a>
           </header>
           <div class="testimonial-controls">
-            <button class="create-testimonial">Buat Ulasan Anda</button>
             <div class="owl-dots"></div>
             <div class="owl-nav"></div>
           </div>
@@ -674,9 +662,7 @@
                     class="img-cover"
                   />
 
-                  <time class="publish-date label-2" datetime="2022-09-15"
-                    >15/09/2022</time
-                  >
+                  <time class="publish-date label-2" datetime="2022-09-15">15/09/2022</time>
                 </div>
 
                 <div class="card-content">
@@ -754,12 +740,9 @@
             </li>
           </ul>
 
-          <a href="#" class="btn btn-primary">
+          <a href="{{ route('article') }}" class="btn btn-primary">
             <span class="text text-1">View Our Article</span>
-
-            <span class="text text-2" aria-hidden="true"
-              >View Our Article</span
-            >
+            <span class="text text-2" aria-hidden="true">View Our Article</span>
           </a>
         </div>
       </section>

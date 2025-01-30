@@ -9,10 +9,12 @@
         "php": "^8.2",
         "bezhansalleh/filament-shield": "^3.3",
         "filament/filament": "^3.2",
+        "filament/notifications": "^3.2",
         "ibrahimbougaoua/filament-rating-star": "^1.0",
         "laravel/framework": "^11.31",
         "laravel/tinker": "^2.9",
-        "laravel/ui": "^4.6"
+        "laravel/ui": "^4.6",
+        "mckenziearts/laravel-notify": "^2.6"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

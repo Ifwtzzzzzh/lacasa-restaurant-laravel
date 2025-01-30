@@ -10,6 +10,9 @@
     <meta name="title" content="Cafe Pemrograman Web" />
     <meta name="description" content="Cafe Pemrograman Web" />
 
+    {{-- LARAVEL NOTIFY CSS --}}
+    @notifyCss
+
     <!-- favicons -->
     <link rel="icon" sizes="76x76" href="{{ asset('assets/images/favicon.png') }}" />
     <link rel="icon" sizes="76x76" href="{{ asset('assets/images/favicon.svg') }}" />
@@ -54,6 +57,7 @@
       <p class="text">Restaurant</p>
     </div>
 
+
     @include('components.header')
 
     <main>
@@ -80,5 +84,8 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    {{-- LARAVEL NOTIFY JS --}}
+    @notifyJs
   </body>
 </html>

@@ -452,6 +452,11 @@ body.nav-active {
     background-color: var(--smoky-black-2);
 }
 
+.btn-restaurant {
+    justify-content: center;
+    align-items: center;
+}
+
 .grid-list {
     margin-top: 5rem;
     display: grid;
@@ -1252,6 +1257,10 @@ body.nav-active {
   #FEATURES
 \*-----------------------------------*/
 
+.features-page {
+    margin-top: 20rem;
+}
+
 .features .section-title {
     margin-block-end: 40px;
 }
@@ -1433,6 +1442,10 @@ body.nav-active {
 
 .event .section-title {
     margin-block-end: 40px;
+}
+
+.article-page {
+    margin-top: 20rem;
 }
 
 .event-card {
@@ -1893,6 +1906,10 @@ body.nav-active {
         margin-top: 15rem;
         max-width: 420px;
         margin-inline: auto;
+    }
+
+    .restaurant-title {
+        margin-bottom: 25rem;
     }
 
     /**

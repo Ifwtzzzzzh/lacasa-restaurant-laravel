@@ -1,4 +1,7 @@
 <header class="header" data-header>
+    {{-- LARAVEL NOTIFY --}}
+    <x-notify::notify/>
+
     <div class="container">
       <a href="{{ route('home') }}" class="logo">
         <img
@@ -14,7 +17,7 @@
           <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <a href="#" class="logo">
+        <a href="{{ route('home') }}" class="logo">
           <img
             src="{{ asset("assets/images/Logo LaCasa2.png") }}"
             width="160"
@@ -23,17 +26,26 @@
           />
         </a>
 
-        <a href="{{ url('/login') }}" class="btn" style="margin-bottom: 10px">
-            <span class="text text-1">Loginnn</span>
-            <span class="text text-2" aria-hidden="true">Login </span>
-        </a>
-        @if (Route::has('register'))
-            <a href="{{ url('/register') }}" class="btn btn-secondary">
-                <span class="text text-1">Register</span>
-
-                <span class="text text-2" aria-hidden="true">Register</span>
+        @if (Route::has('login'))
+        @auth
+            <a href="{{ url('/admin') }}" class="btn btn-secondary" style="margin-bottom: 10px">
+                <span class="text text-1">Dashboard</span>
+                <span class="text text-2" aria-hidden="true">Dashboard </span>
             </a>
-        @endif
+        @else
+            <a href="{{ url('/login') }}" class="btn" style="margin-bottom: 10px">
+                <span class="text text-1">Login</span>
+                <span class="text text-2" aria-hidden="true">Login </span>
+            </a>
+            @if (Route::has('register'))
+                <a href="{{ url('/register') }}" class="btn btn-secondary">
+                    <span class="text text-1">Register</span>
+
+                    <span class="text text-2" aria-hidden="true">Register</span>
+                </a>
+            @endif
+        @endauth
+      @endif
 
         <ul class="navbar-list">
           <li class="navbar-item">
@@ -44,27 +56,27 @@
           </li>
 
           <li class="navbar-item">
-            <a href="#restaurant" class="navbar-link hover-underline">
+            <a href="{{ route('restaurant') }}" class="navbar-link hover-underline">
               <div class="separator"></div>
               <span class="span">Restaurant</span>
             </a>
           </li>
 
           <li class="navbar-item">
-            <a href="#keunggulan" class="navbar-link hover-underline">
+            <a href="{{ route('benefit') }}" class="navbar-link hover-underline">
               <div class="separator"></div>
               <span class="span">Benefit</span>
             </a>
           </li>
 
           <li class="navbar-item">
-            <a href="#article" class="navbar-link hover-underline">
+            <a href="{{ route('article') }}" class="navbar-link hover-underline">
               <div class="separator"></div>
               <span class="span">Article</span>
             </a>
           </li>
           <li class="navbar-item">
-            <a href="#contact" class="navbar-link hover-underline">
+            <a href="{{ route('contact') }}" class="navbar-link hover-underline">
               <div class="separator"></div>
               <span class="span">Contact</span>
             </a>

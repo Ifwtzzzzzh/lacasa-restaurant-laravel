@@ -25,4 +25,19 @@ class UserController extends Controller
     public function restaurant() {
         return view('public.restaurant');
     }
+
+    public function benefit() {
+        return view('public.benefit');
+    }
+
+    public function article() {
+        return view('public.article');
+    }
+
+    public function contact() {
+        return view('public.contact');
+    }
+    public function test() {
+        return view('public.test');
+    }
 }

@@ -22,9 +22,6 @@
                     <h3 class="title-3">
                     <a href="#" class="card-title">Greek Salad</a>
                     </h3>
-
-                    <span class="badge label-1">Seasonal</span>
-
                     <span class="span title-2">$25.50</span>
                 </div>
 
@@ -105,16 +102,12 @@
                     <h3 class="title-3">
                     <a href="#" class="card-title">Tokusen Wagyu</a>
                     </h3>
-
-                    <span class="badge label-1">New</span>
-
                     <span class="span title-2">$39.00</span>
                 </div>
 
                 <p class="card-text label-1">
                     Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
                 </p>
-
                 </div>
 
             </div>
@@ -215,7 +208,7 @@
               </div>
 
               <h2 class="headline-1 text-center text-menu">Menu</h2>
-              <div class="icon-wrapper">
+              <div class="icon-wrapper" id='icon-wrapper'>
                 <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
                   <select name="menu" class="input-field">
                     <option value="tiramisu-cake">Tiramisu Cake</option>
@@ -224,24 +217,26 @@
                   </select>
                   <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                 </div>
-              <div class="icon-wrapper">
+              <div class="icon-wrapper" id="icon-wrapper">
                 <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
                   <input type="number" name="number" placeholder="Quantity" autocomplete="off" class="input-field">
                 </div>
-                <button type="submit" class="btn btn-menu">
+
+                <div class="menu-container" id="menu-container">
+                    <!-- Dynamic menu items will appear here -->
+                </div>
+
+                <a class="btn btn-menu" id="btn-menu">
                     <span class="text text-1">Add Menu</span>
                     <span class="text text-2" aria-hidden="true">Add Menu</span>
-                </button>
+                </a>
                 <p class="text-summary">
-                    Total Pembelian : 9191919191 Rp
+                    Total Pembelian : Rp. 0
                 </p>
-                <p>Sub Total : 9191919191 Rp</p>
-                <p>PPN 11% : 9191919191 Rp</p>
-                <p>PPN 11% : 9191919191 Rp</p>
-                <p>Total Pembelian : 9191919191 Rp</p>
-                <p class="text-total">
-                    Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
-                </p>
+                <p>Sub Total : Rp. 0</p>
+                <p>PPN 11% : Rp. 0</p>
+                <p>PPN 11% : Rp. 0</p>
+                <p class="text-total">Total Pembelian : Rp. 0</p>
                 <button type="submit" class="btn btn-secondary btn-submit">
                   <span class="text text-1">Book A Table</span>
                   <span class="text text-2" aria-hidden="true">Book A Table</span>
@@ -287,4 +282,32 @@
 
         </div>
     </section>
+    <script>
+        document.getElementById('btn-menu').addEventListener('click', function() {
+            const menuContainer = document.getElementById('menu-container');
+
+            // Create a new div
+            const newDiv = document.createElement('div');
+
+            // Add content to the new div
+            newDiv.innerHTML = `
+                <div class="icon-wrapper" id='icon-wrapper'>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                  <select name="menu" class="input-field">
+                    <option value="tiramisu-cake">Tiramisu Cake</option>
+                    <option value="tiramisu-cake">Spagheti</option>
+                    <option value="tiramisu-cake">Toast</option>
+                  </select>
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+              <div class="icon-wrapper" id="icon-wrapper">
+                <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+                  <input type="number" name="number" placeholder="Quantity" autocomplete="off" class="input-field">
+                </div>
+            `;
+
+            // Append the new div to the menu container
+            menuContainer.appendChild(newDiv);
+        });
+    </script>
 @endsection
