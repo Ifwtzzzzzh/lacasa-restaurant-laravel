@@ -192,23 +192,24 @@
       </h2>
       <div class="container">
           <ul class="grid-list grid-list-restaurant">
+            @foreach ($popularRestaurants as $popularRestaurant)
             <li>
               <div class="Restaurant-card">
                 <div class="has-before">
                   <figure class="card-banner">
                     <img
-                      src="{{ asset('assets/images/thumbnail-1.png') }}"
+                      src="{{ asset('storage/' . $popularRestaurant->image) }}"
                       alt="La Maison Elegante"
                     />
                   </figure>
                 </div>
                 <div class="card-konten">
                   <h3 class="card-judul">
-                    <a href="#">Masakan Padang Pagi Sore</a>
+                    <a href="#">{{ $popularRestaurant->name }}</a>
                   </h3>
                   <div class="restaurant-info">
-                    <span class="rating">★★★★★ 4.8</span>
-                    <p class="location">📍 BSD</p>
+                    <span class="rating">{!! $popularRestaurant->ratingStars !!}</span>
+                    <p class="location">📍 {{ $popularRestaurant->city->name }}</p>
                   </div>
                   <div class="action-buttons">
                   </div>
@@ -218,60 +219,7 @@
                 >
               </div>
             </li>
-
-            <li>
-              <div class="Restaurant-card">
-                <div class="has-before">
-                  <figure class="card-banner">
-                    <img
-                      src="{{ asset('assets/images/thumbnail-2.png') }}"
-                      alt="Sakura Japanese"
-                    />
-                  </figure>
-                </div>
-                <div class="card-konten">
-                  <h3 class="card-judul">
-                    <a href="#">Restaurant Japanese</a>
-                  </h3>
-                  <div class="restaurant-info">
-                    <span class="rating">★★★★½ 4.5</span>
-                    <p class="location">📍 Jakarta Timur</p>
-                  </div>
-                  <div class="action-buttons">
-                  </div>
-                </div>
-                <a href="reservasi.html" class="btn-text book-table"
-                  >Book Table</a
-                >
-              </div>
-            </li>
-
-            <li>
-              <div class="Restaurant-card">
-                <div class="has-before">
-                  <figure class="card-banner">
-                    <img
-                      src="{{ asset('assets/images/thumbnail-3.png') }}"
-                      alt="Il Gusto Italiano"
-                    />
-                  </figure>
-                </div>
-                <div class="card-konten">
-                  <h3 class="card-judul">
-                    <a href="#">Warung Ahog</a>
-                  </h3>
-                  <div class="restaurant-info">
-                    <span class="rating">★★★★★ 4.7</span>
-                    <p class="location">📍 BSD</p>
-                  </div>
-                  <div class="action-buttons">
-                  </div>
-                </div>
-                <a href="reservasi.html" class="btn-text book-table"
-                  >Book Table</a
-                >
-              </div>
-            </li>
+            @endforeach
         </ul>
           <img
             src="{{ asset('assets/images/shape-1.png') }}"
